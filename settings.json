@@ -38,8 +38,8 @@
       "border-radius": "6px !important",
       "margin-left": "4px !important",
       "margin-right": "4px !important",
-
-      "width": "calc(100% - 8px) !important"
+      "width": "calc(100% - 8px) !important",
+      "transition": "background 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important"
    },
    ".part.sidebar .monaco-list-row.selected, .part.sidebar .monaco-list-row.focused": {
       "background": "linear-gradient(135deg, rgba(49,50,56,0.6), rgba(37,38,44,0.4)) !important",
@@ -208,6 +208,9 @@
       "filter": "drop-shadow(0 0 2px)",
       "opacity": "1 !important"
    },
+   ".part.titlebar .action-label": {
+      "border-radius": "50% !important"
+   },
    ".command-center-center": {
       "border-radius": "9999px !important",
       "overflow": "hidden !important",
@@ -289,13 +292,6 @@
    ".scrollbar .slider": {
       "border-radius": "9999px !important",
       "transition": "opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important"
-   },
-   ".part.sidebar .monaco-list-row": {
-      "border-radius": "6px !important",
-      "margin-left": "4px !important",
-      "margin-right": "4px !important",
-      "width": "calc(100% - 8px) !important",
-      "transition": "background 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important"
    },
    ".tab .tab-actions": {
       "opacity": "0 !important",

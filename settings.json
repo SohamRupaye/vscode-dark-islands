@@ -26,6 +26,7 @@
       "padding": "8px 20px 0 0 !important"
    },
    ".part.sidebar .title-label h2": {
+      "font-family": "'Bear Sans UI Heading', sans-serif !important",
       "font-size": "12px !important",
       "font-weight": "700 !important",
       "text-transform": "uppercase !important",

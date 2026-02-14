@@ -309,6 +309,14 @@
       "border-radius": "9999px !important",
       "transition": "opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important"
    },
+   ".monaco-count-badge": {
+      "border-radius": "9999px !important",
+      "font-size": "12px !important",
+      "padding": "0 6px !important",
+      "min-height": "16px !important",
+      "line-height": "16px !important",
+      "transform": "scale(0.85) !important"
+   },
    ".tab .tab-actions": {
       "opacity": "0 !important",
       "transition": "opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important"

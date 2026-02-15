@@ -8,6 +8,8 @@
 </a>
 
 
+## **THIS THEME IS STILL A WORK IN PROGRESS**
+
 A dark color theme for Visual Studio Code inspired by JetBrains' Islands Dark theme. Features floating glass-like panels, rounded corners, smooth animations, and a deeply refined UI.
 
 ![Islands Dark Screenshot](assets/CleanShot%202026-02-14%20at%2021.47.05@2x.png)

@@ -72,8 +72,8 @@ The scripts will automatically:
 - ✅ Install the Islands Dark theme extension
 - ✅ Install the Custom UI Style extension
 - ✅ Install Bear Sans UI fonts
-- ✅ Merge settings into your VS Code: configuration
-- ✅ Enable Custom UI Style and reload VS Code:
+- ✅ Back up your existing settings and apply Islands Dark settings
+- ✅ Enable Custom UI Style and reload VS Code
 
 > **Note:** IBM Plex Mono and FiraCode Nerd Font Mono must be installed separately (the script will remind you).
 
@@ -185,6 +185,55 @@ This is expected after enabling Custom UI Style. Dismiss it or select **Don't Sh
 
 ### Previously used "Custom CSS and JS Loader" extension
 If you previously used the **Custom CSS and JS Loader** extension (`be5invis.vscode-custom-css`), it may have injected CSS directly into VS Code's `workbench.html` that persists even after disabling. If styles conflict, reinstall VS Code to get a clean `workbench.html`, then use only **Custom UI Style**.
+
+## Uninstalling
+
+To restore your VS Code to its previous state:
+
+### 1. Restore your old settings
+
+The installer backs up your previous settings to `settings.json.pre-islands-dark`. Restore it by copying it back:
+
+**macOS:**
+```bash
+cp ~/Library/Application\ Support/Code/User/settings.json.pre-islands-dark ~/Library/Application\ Support/Code/User/settings.json
+```
+
+**Linux:**
+```bash
+cp ~/.config/Code/User/settings.json.pre-islands-dark ~/.config/Code/User/settings.json
+```
+
+**Windows (PowerShell):**
+```powershell
+Copy-Item "$env:APPDATA\Code\User\settings.json.pre-islands-dark" "$env:APPDATA\Code\User\settings.json" -Force
+```
+
+### 2. Disable Custom UI Style
+
+1. Open **Command Palette** (`Cmd+Shift+P` / `Ctrl+Shift+P`)
+2. Run **Custom UI Style: Disable**
+3. VS Code will reload
+
+### 3. Remove the theme extension
+
+Delete the extension folder:
+
+**macOS/Linux:**
+```bash
+rm -rf ~/.vscode/extensions/bwya77.islands-dark-1.0.0
+```
+
+**Windows (PowerShell):**
+```powershell
+Remove-Item -Recurse -Force "$env:USERPROFILE\.vscode\extensions\bwya77.islands-dark-1.0.0"
+```
+
+### 4. Change your color theme
+
+1. Open **Command Palette** (`Cmd+Shift+P` / `Ctrl+Shift+P`)
+2. Search for **Preferences: Color Theme**
+3. Select your preferred theme
 
 ## Credits
 
